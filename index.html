@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Portfolio | Your Name</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Ankita<span> Panda</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Creative Design Solutions</h1>
+          <p class="tagline">
+            Bringing ideas to life through thoughtful design
+          </p>
+          <a href="#portfolio" class="btn"
+            >View My Work <i class="fas fa-arrow-down"></i
+          ></a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="img/pexels-jadson-thomas-164235-542555.jpg"
+            alt="Designer at work"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="img/pexels-olly-3762800.jpg" alt="Ankita" />
+          </div>
+          <div class="about-text">
+            <h3>Hello, I'm ANKITA PANDA</h3>
+            <p>
+              I'm a passionate designer with 1 years of experience creating
+              visual solutions that communicate effectively and delight users.
+              My journey in design began when...
+            </p>
+
+            <div class="skills">
+              <h4>My Skills</h4>
+              <div class="skill-item">
+                <span>UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Branding</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Motion Graphics</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tools">
+              <h4>Tools I Use</h4>
+              <div class="tool-icons">
+                <i class="fab fa-figma" title="Figma"></i>
+                <i class="fab fa-adobe" title="Adobe Creative Suite"></i>
+                <i class="fas fa-cube" title="3D Modeling"></i>
+                <i class="fas fa-code" title="HTML/CSS"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button class="filter-btn" data-filter="posters">Posters</button>
+          <button class="filter-btn" data-filter="logos">Logos</button>
+          <button class="filter-btn" data-filter="motion">3D/Motion</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item" data-category="branding">
+            <img
+              src="img/pexels-leeloothefirst-7598022.jpg"
+              alt="Branding Project"
+            />
+            <div class="portfolio-overlay">
+              <h3>Brand Identity</h3>
+              <p>Complete branding for a startup</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item" data-category="uiux">
+            <img
+              src="img/pexels-designecologist-1779487.jpg"
+              alt="UI/UX Project"
+            />
+            <div class="portfolio-overlay">
+              <h3>Mobile App Design</h3>
+              <p>User experience redesign</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item" data-category="social">
+            <img
+              src="img/pexels-bianca-gasparoto-834990-1752806.jpg"
+              alt="Social Media Project"
+            />
+            <div class="portfolio-overlay">
+              <h3>Social Media Campaign</h3>
+              <p>Visual content strategy</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 -->
+          <div class="portfolio-item" data-category="logos">
+            <img src="img/pexels-scottwebb-430205.jpg" alt="Logo Design" />
+            <div class="portfolio-overlay">
+              <h3>Logo Collection</h3>
+              <p>Brand mark designs</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 -->
+          <div class="portfolio-item" data-category="motion">
+            <img src="img/pexels-asim-razan-20721.jpg" alt="Motion Graphics" />
+            <div class="portfolio-overlay">
+              <h3>3D Animation</h3>
+              <p>Product showcase</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 6 -->
+          <div class="portfolio-item" data-category="posters">
+            <img
+              src="img/pexels-atomlaborblog-776119.jpg"
+              alt="Poster Design"
+            />
+            <div class="portfolio-overlay">
+              <h3>Event Poster Series</h3>
+              <p>Music festival promotion</p>
+              <a href="#" class="view-btn">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-palette"></i>
+            <h3>Brand Identity</h3>
+            <p>
+              Complete branding packages including logo, color palette,
+              typography, and brand guidelines.
+            </p>
+            <span class="price">Starting at Rs 4500</span>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              User-centered interface design with wireframes, prototypes, and
+              user testing.
+            </p>
+            <span class="price">Starting at Rs 8100</span>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-photo-video"></i>
+            <h3>Social Media Kits</h3>
+            <p>
+              Custom templates and assets for consistent social media presence.
+            </p>
+            <span class="price">Starting at Rs 5000</span>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-cube"></i>
+            <h3>3D & Motion</h3>
+            <p>
+              3D modeling, animation, and motion graphics for products and
+              marketing.
+            </p>
+            <span class="price">Contact for quote</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "Working with Ankita Panda was an absolute pleasure. They took
+                our vague ideas and transformed them into a stunning brand
+                identity that perfectly represents our company."
+              </p>
+              <div class="client-info">
+                <img src="images/client1.jpg" alt="Client Name" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <span>CEO, Startup Co.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "The UI redesign Ankita Panda delivered increased our app
+                engagement by 40%. Their attention to user experience details
+                was remarkable."
+              </p>
+              <div class="client-info">
+                <img src="images/client2.jpg" alt="Client Name" />
+                <div>
+                  <h4>Michael Chen</h4>
+                  <span>Product Manager, Tech Inc.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "Our social media presence transformed after implementing Ankita
+                panda's visual strategy. The templates they created saved us
+                countless hours while maintaining quality."
+              </p>
+              <div class="client-info">
+                <img src="images/client3.jpg" alt="Client Name" />
+                <div>
+                  <h4>Emily Rodriguez</h4>
+                  <span>Marketing Director, Retail Brand</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots"></div>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Work Together</h3>
+            <p>
+              Have a project in mind or want to discuss potential collaboration?
+              I'd love to hear from you!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>Ankita.email@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>999999988</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Based in Delhi</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="fab fa-behance"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <a href="#" class="logo">Ankita<span>Panda</span></a>
+            <p>
+              Creative designer specializing in branding, UI/UX, and visual
+              communication.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe for design tips and updates.</p>
+            <form>
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 @AnkitaPanda All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
